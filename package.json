@@ -1,0 +1,14 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix frontend\" \"npm run dev --prefix backend\"",
+    "frontend:lint": "npm run lint --prefix frontend",
+    "frontend:format": "npm run format --prefix frontend",
+    "backend:lint": "npm run lint --prefix backend",
+    "backend:format": "npm run format --prefix backend"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
