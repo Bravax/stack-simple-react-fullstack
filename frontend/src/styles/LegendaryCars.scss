@@ -1,0 +1,28 @@
+@use './Variable' as*;
+
+main {
+  background-image: url(../assets/motorP180.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.reduced {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+button {
+  width: 20vw;
+  height: auto;
+}
+
+h1 {
+  position: absolute;
+  background-color: $colorDark;
+  top: 8vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

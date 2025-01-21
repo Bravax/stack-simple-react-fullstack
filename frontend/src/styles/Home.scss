@@ -1,0 +1,42 @@
+@use './Variable';
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes garage {
+  0% {
+    background-image: url("../assets/fordDealership.png");
+    opacity: 1;
+    filter: blur(0);
+  }
+  50% {
+    background-image: url("../assets/fordT.jpg");
+    background-size: 40% auto;
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    background-image: url("../assets/xk120.png");
+    background-size: 50% auto;
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.garage {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  animation: garage 25s ease-in-out infinite;
+  transition: opacity 1s ease, filter 1s ease;
+  position: absolute;
+  z-index: -1;
+}
